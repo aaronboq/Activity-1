@@ -1,0 +1,149 @@
+CD C:/Users/Manish/Desktop/GITManish
+
+git --version
+
+#GIT settings
+
+Name       -      git config --global user.name "manish jain"
+Email    - git config --global user.email "manish.jain@gmail.com"
+Default editor
+line ending  
+     
+ \r - carriage return
+\n line feed   - windows/linux/mac
+
+   git config --global core.autocrlf input
+
+
+
+   1. System - All users
+   2. Global - all repositories of the current user
+   3. Local - The current repository
+
+git config --list   (for exit type q)
+git config user.name
+git config user.email
+
+git config --list | findstr user.name   //windows
+git config --list | grep user.name   //Linux
+
+git config --global core.editor "code --wait"
+code
+
+git config --global -e
+
+__________________________________________________
+
+init - to create local repository
+
+git init Demo
+
+clone - used to make a copy of repository from URL.
+
+git clone https://github.com/manishjainstorage/Python.git
+
+git log
+git log -p -2   # to display only last two entries
+git log --stat
+
+git log --pretty=format:"%h - %an , %ar : %s"
+
+git log --pretty=oneline
+
+________________________________________________________________________
+
+stash - enables you to switch branches without committing the current brach
+
+1. change something in the orignal file
+2. check status   - git status
+3. git stash
+4. git status
+
+git stash save "This is temp change"
+
+# To check the list
+
+git stash list
+
+git stash Apply
+
+git stash drop stash@{1}
+
+git stash clear
+________________________________________________________________________
+
+Ignore - it doesn't affect the files that already tracked by git.
+
+git ls-files -ci --exclude-standard
+git ls-files -i --exclude-standard -c
+
+_____________________________________________________________
+
+head - current branch
+
+git head
+
+git log
+
+________________________________________________________
+
+Remote - 
+
+
+cd G:\My Drive\GIT
+
+
+_____________________________
+
+
+
+Tag - comments for commit stage
+1. Annotated tag
+2. Light Weighted tag
+
+git checkout master
+
+
+cd C:/Users/Manish/Desktop/GITManish/Demo1
+
+git tag projectv1.1
+
+git tag show
+ 
+git tag push origin
+____________________________________
+
+Upstream and Downstream
+
+
+US - where you clone the REP.
+DS - Any project that integrated your work with other work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
